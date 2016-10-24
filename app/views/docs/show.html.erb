@@ -1,2 +1,6 @@
 <h2><%= @doc.title %></h2>
 <p><%= @doc.content %></p>
+
+<%= link_to 'Back', docs_path %>
+<%= link_to 'Edit', edit_doc_path(@doc) %>
+<%= link_to 'Delete', doc_path(@doc), method: :delete, data: {confirm: "Are you sure?" } %>
