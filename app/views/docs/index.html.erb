@@ -1,7 +1,25 @@
-<% @docs.each do |doc| %>
-	<h2><%= link_to doc.title, doc %></h2>
-	<p><%= time_ago_in_words(doc.created_at) %></p>
-	<p><%= truncate(doc.content, length: 50) %></p>
-<% end %>	
-
-<%= link_to 'Create Doc', new_doc_path %>
+<div class="wrapper_with_padding">
+  <div class="clearfix" id="docs">
+    <% unless @docs.blank? %>
+      <% @docs.each do |doc| %>
+          <a href="<%= (url_for [doc]) %>">
+          <div class="doc">
+            <p class="title">
+              <%= doc.title %>
+            </p>
+            <p class="date">
+              <%= time_ago_in_words(doc.created_at) %>
+            </p>
+            <p class="content">
+              <%= truncate(doc.content, length:50) %>
+            </p>
+          </div>
+        </a>
+      <% end %>
+    <% else %>
+      <h2>Create Doc!</h2>
+      <p>Start Creating Documents and Organizing your life!</p>
+	   <%= link_to 'Create Doc', new_doc_path, :id => "button", :class => "button" %>
+    <% end %>
+  </div>
+</div>
