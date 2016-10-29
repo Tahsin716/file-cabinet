@@ -1,2 +1,41 @@
-<h1>Welcome#index</h1>
-<p>Find me in app/views/welcome/index.html.erb</p>
+<div id="banner">
+  <div class="banner_content">
+    <h1>FileCabinet</h1>
+    <p>Your life's Work!</p>
+    <%= link_to "Sign Up", new_user_registration_path, :id =>"button", :class => "button" %>
+  </div>
+</div>
+<div id="testimonial">
+  <div class="wrapper">
+    <p class="quote">"I keep all our important documents with FileCabinet."</p>
+    <p class="name">- President Obama</p>
+  </div>
+</div>
+<div id="callouts">
+  <div class="callout_inner">
+    <div class="wrapper">
+      <div class="callout">
+        <h2>Journal</h2>
+       Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus in euismod sapien. Nam varius enim quis nibh sollicitudin ultrices. Nullam orci nisi, molestie a dignissim quis, varius et eros. Nullam et mattis odio. Aliquam ultricies eu purus et vulputate. Sed sed nisl mauris. Donec convallis consectetur vehicula. 
+      </div>
+      <div class="callout">
+        <h2>Notes</h2>
+        Aliquam sagittis blandit nulla eget finibus. Proin quis facilisis arcu. Donec a ipsum eget tortor sollicitudin posuere. Donec ac orci tellus. Maecenas vel libero ex. In condimentum a mauris et luctus. Fusce sed faucibus justo. 
+      </div>
+      <div class="callout">
+        <h2>Epic</h2>
+        Nulla nulla augue, suscipit et euismod blandit, consectetur sit amet augue. Vestibulum at leo velit. Nullam imperdiet, purus in consectetur laoreet, metus est rhoncus sem, ut fermentum neque quam at risus. Sed in pulvinar turpis. Fusce congue leo in nibh venenatis blandit id nec nulla. Aliquam erat volutpat
+      </div>
+    </div>
+  </div>
+</div>
+<div id="bottom_cta">
+  <div class="wrapper">
+    <h2>Store All Your Notes!</h2>
+    <p>Be Different, Join the Elite!</p>
+    <%= link_to "Start Here!!!", new_user_registration_path, :id =>"button", :class => "button" %>
+  </div>
+</div>
+<footer>
+  <p> <%= link_to '©2016 Tahsin Rashad', "https://github.com/Tahsin716", :target => "_blank" %> </p>
+</footer>
