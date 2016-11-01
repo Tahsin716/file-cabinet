@@ -135,3 +135,13 @@ textarea {
 	min-height: 200px;
 }
 
+.buttonfix {
+	border: none;
+	outline: none;
+	background: $green;
+	padding: 1rem 3.5rem;
+	border-radius: 0.1rem;
+	cursor: pointer;
+	color: white;
+	margin: 2rem 0;
+}
